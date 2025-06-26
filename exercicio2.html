@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div id="cor" style="background-color: blue; height: 100px; width: 100px;"></div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+    <button onclick="trocar()">Clique aqui</button>
+    </div>
+    <script>
+        const cor = document.getElementById("cor")
+        function trocar(){
+            cor.style.backgroundColor = "black"
+        }
+    </script>
+</body>
+</html>
