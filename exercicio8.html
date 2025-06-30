@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center; ">
+        <input id="num1" type="text">
+        +
+        <input id="num2" type="text">
+        =
+        <p id="resultado"></p>
+    </div>
+    <button onclick="somar()">SOMA</button>
+    <script>
+        function somar() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let resultado = document.getElementById("resultado");
+
+            let soma = parseFloat(num1) + parseFloat(num2);
+            resultado.textContent = soma;
+        }
+    </script>
+</body>
+
+</html>

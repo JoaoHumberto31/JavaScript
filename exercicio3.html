@@ -7,7 +7,19 @@
 </head>
 <body>
 
-    <input type="text">
-    <button id=""></button>
+    
+    <button onclick="trocar()">Mostrar/Ocultar</button>
+    <input type="text" id="bloco">
+    <script>
+        
+        function trocar(){
+            const bloco = document.getElementById("bloco")
+            if (bloco.style.display === 'none') {
+                bloco.style.display = 'block';
+            } else {
+                bloco.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

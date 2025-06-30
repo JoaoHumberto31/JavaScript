@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imagem" src="https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/603_neymar.jpg" alt="neymar1">
+    <button onclick="trocar()">Trocar Imagem</button>
+
+    <script>
+        imagens_lista = ["https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/603_neymar.jpg", 
+        "https://p4.wallpaperbetter.com/wallpaper/331/210/502/neymar-pictures-wallpaper-preview.jpg", 
+        "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/Santos-Neymar-braco-Cruzado.jpg?w=419&h=283&crop=0"]
+        
+        let contador = 0
+        function trocar(){
+            if(contador >= 2){
+                contador = 0
+            }else{
+                contador++
+            }
+            imagemTrocada = imagens_lista[contador]
+            console.log(contador)
+            const imagem = document.getElementById("imagem")
+            imagem.setAttribute("src", imagemTrocada)
+        }
+        
+    </script>
+</body>
+</html>
